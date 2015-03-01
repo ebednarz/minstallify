@@ -9,6 +9,7 @@
   "dependencies": {
     "browserify": "^9.0.3",
     "domready": "^1.0.7",
+    "minstallify": "0.0.2",
     "mkdirp": "^0.5.0"
   }
 }
