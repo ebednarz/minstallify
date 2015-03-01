@@ -1,0 +1,14 @@
+{
+  "name": "minstallify-api-example",
+  "version": "0.0.1",
+  "private": true,
+  "description": "minstallify API example",
+  "scripts": {
+    "js": "node scripts/bundle.js"
+  },
+  "dependencies": {
+    "browserify": "^9.0.3",
+    "domready": "^1.0.7",
+    "mkdirp": "^0.5.0"
+  }
+}
