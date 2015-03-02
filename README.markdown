@@ -1,4 +1,4 @@
-# minstallify [![Build Status](https://secure.travis-ci.org/ebednarz/minstallify.svg?branch=master)](https://travis-ci.org/ebednarz/minstallify)
+# minstallify [![npm version][npm-image]][npm-url] [![build status][travis-image]][travis-url] [![npm dependencies][david-image]][david-url]
 
 > Browserify transform to minify installed modules.
 
