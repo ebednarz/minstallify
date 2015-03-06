@@ -1,4 +1,4 @@
-# minstallify [![npm version][npm-image]][npm-url] [![build status][travis-image]][travis-url] [![npm dependencies][david-image]][david-url]
+# minstallify [![npm version][npm-image]][npm-url] [![build status][travis-image]][travis-url]
 
 > Browserify transform to minify installed modules.
 
@@ -10,8 +10,6 @@
 
 MIT
 
-[david-image]: https://img.shields.io/david/ebednarz/minstallify.svg?style=flat-square
-[david-url]: https://david-dm.org/ebednarz/minstallify
 [npm-image]: https://img.shields.io/npm/v/minstallify.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/minstallify
 [travis-image]: https://img.shields.io/travis/ebednarz/minstallify.svg?style=flat-square
