@@ -1,18 +1,6 @@
 'use strict';
+var isPackageFile = require('is-package-file');
 var moduleExpression = require('./module-expression');
-
-/**
- * @param {string} name
- * @returns {boolean}
- */
-function isUrlSafe(name) {
-    return (name === encodeURIComponent(name));
-}
-
-function isPackageDirectory(modulePath) {
-    var match = moduleExpression('([^/]+)/').exec(modulePath);
-    return match && isUrlSafe(match[1]);
-}
 
 /**
  * @param {string} modulePath
@@ -20,10 +8,7 @@ function isPackageDirectory(modulePath) {
  * @returns {boolean}
  */
 function included(modulePath, exclude) {
-    if (!moduleExpression().test(modulePath) ||
-        moduleExpression('[._]').test(modulePath) ||
-        !isPackageDirectory(modulePath)
-    ) {
+    if (!isPackageFile(modulePath)) {
         return false;
     }
 
