@@ -1,5 +1,5 @@
 'use strict';
-var included = require('../library/included');
+var included = require('./library/included');
 
 module.exports = require('testifix')({
     'included': {
@@ -24,20 +24,11 @@ module.exports = require('testifix')({
                 resolve(!included('node_modules/be$ep/boop.js'));
             },
 
-            'that might be a partial match': function (resolve) {
-                resolve(!included('node_modules/beep'));
-            },
-
             'that are marked excluded': function (resolve) {
                 resolve(!included('node_modules/beep/boop.js', ['beep']));
             }
         },
         'includes names': {
-            'that are valid package names in the modules directory':
-                function (resolve) {
-                    resolve(included('node_modules/beep/boop'));
-                },
-
             'that are not marked excluded': function (resolve) {
                 resolve(included('node_modules/beep/boop.js', []));
             }

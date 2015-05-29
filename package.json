@@ -17,10 +17,10 @@
   ],
   "license": "MIT",
   "scripts": {
-    "test": "testifix --glob 'test/*.js'"
+    "test": "testifix --glob '*_test.js'"
   },
   "dependencies": {
-    "is-package-file": "0.0.3",
+    "is-package-file": "0.0.4",
     "through2": "^0.6.3",
     "uglify-js": "^2.4.16"
   },
